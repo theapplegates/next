@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/tags/[tag]",
+      "regex": "^/tags/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPtag": "nxtPtag"
+      },
+      "namedRegex": "^/tags/(?<nxtPtag>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
+      "page": "/posts",
+      "regex": "^/posts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts(?:/)?$"
+    },
+    {
+      "page": "/posts/aaron-swartz-a-programmable-web",
+      "regex": "^/posts/aaron\\-swartz\\-a\\-programmable\\-web(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/aaron\\-swartz\\-a\\-programmable\\-web(?:/)?$"
+    },
+    {
+      "page": "/posts/code-blocks",
+      "regex": "^/posts/code\\-blocks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/code\\-blocks(?:/)?$"
+    },
+    {
+      "page": "/posts/draft",
+      "regex": "^/posts/draft(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/draft(?:/)?$"
+    },
+    {
+      "page": "/posts/lists",
+      "regex": "^/posts/lists(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/lists(?:/)?$"
+    },
+    {
+      "page": "/posts/nextra-components",
+      "regex": "^/posts/nextra\\-components(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/nextra\\-components(?:/)?$"
+    },
+    {
+      "page": "/posts/table",
+      "regex": "^/posts/table(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/posts/table(?:/)?$"
+    },
+    {
+      "page": "/rss.xml",
+      "regex": "^/rss\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rss\\.xml(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

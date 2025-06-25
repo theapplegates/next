@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/rss.xml/route": "/rss.xml",
+  "/icon.svg/route": "/icon.svg",
+  "/page": "/",
+  "/posts/(with-comments)/code-blocks/page": "/posts/code-blocks",
+  "/posts/(with-comments)/aaron-swartz-a-programmable-web/page": "/posts/aaron-swartz-a-programmable-web",
+  "/posts/(with-comments)/draft/page": "/posts/draft",
+  "/posts/(with-comments)/lists/page": "/posts/lists",
+  "/posts/(with-comments)/nextra-components/page": "/posts/nextra-components",
+  "/tags/[tag]/page": "/tags/[tag]",
+  "/posts/(with-comments)/table/page": "/posts/table",
+  "/posts/page": "/posts"
+}
